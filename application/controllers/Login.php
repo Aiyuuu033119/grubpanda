@@ -5,9 +5,8 @@ class Login extends CI_Controller {
 
     public function __construct(){
 		parent::__construct();
-
         $this->load->helper('url');
-        $this->load->model('Reset_Model', 'reset');
+        $this->load->model('Model', 'model');
         date_default_timezone_set('Asia/Manila');
 	}
 
@@ -21,6 +20,10 @@ class Login extends CI_Controller {
         $this->load->view('application/index');
 	}
 
-
+	public function userLogin()
+	{
+		// $email = $this->input->post("email");
+		// $password = $this->input->post("password");
+	}
 
 }

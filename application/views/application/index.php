@@ -24,7 +24,7 @@
     </a>
     <div class="form-inline">
       <button class="btn btn-outline-white my-2 my-sm-0" type="submit">Sign Up</button>
-    </form>
+      </form>
   </nav>
 
   <div class="sign-in">
@@ -43,7 +43,7 @@
               <input class="loginPass text-center" type="password" name="password" id="password" required="_required" placeholder="Password" style="padding: 12px 20px" />
             </div>
             <div class="form-group form-button mt-3" style="text-align:center">
-              <input type="submit" name="submit" id="submit" class="form-submit signin__button" value="Submit" style="width: 100%"/>
+              <input type="submit" name="submit" id="submit" class="form-submit signin__button" value="Submit" style="width: 100%" />
             </div>
           </form>
         </div>
@@ -97,8 +97,38 @@
   <script>
     $(document).ready(function() {
 
-     
+      $('.signin__button').on('click', function() {
+
+        var email = $('#email').val();
+        var password = $('#password').val();
+
+        // var isValid = false;
+
+        // if(email==''&&password==''){
+
+        // }
+        
+        var data = new FormData();
+
+        data.append('email', getEmail);
+        data.append('password', getPass);
+        data.append('captcha', captcha);
+
+        $.ajax({
+          url: '<?php echo base_url() ?>login/userLogin',
+          data: data,
+          type: "POST",
+          contentType: false,
+          processData: false,
+          success: function(data) {
+
+          }
+        });
+
+      });
+
     });
   </script>
 </body>
+
 </html>
