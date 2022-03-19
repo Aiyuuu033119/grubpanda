@@ -87,10 +87,10 @@ class Model extends CI_Model {
 		return $query->result();
 	}
 
-	public function verify($tableName, $match)
+	public function verify($tableName, $arrayWhere)
 	{
 
-        $query = $this->db->get_where($tableName,$match);
+        $query = $this->db->get_where($tableName,$arrayWhere);
 
 		return $query->result();
 	}
