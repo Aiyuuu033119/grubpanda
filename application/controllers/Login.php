@@ -24,6 +24,13 @@ class Login extends CI_Controller {
 	{
 		// $email = $this->input->post("email");
 		// $password = $this->input->post("password");
+
+		// try mo na lang ulit nan atleast ok 
+		// mo pressure nan sabihan mo ko sa FRIDAY kapag tapos ka na
+		// kunware may update ka ang gagawin mo na lang is
+		// git add .
+		// git commit -m "msg mo"
+		// git push origin vincent
 	}
 
 }
