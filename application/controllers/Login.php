@@ -22,24 +22,26 @@ class Login extends CI_Controller {
 
 	public function userLogin()
 	{
-		 $email = $this->input->post("email");
-		 $password = $this->input->post("password");
-		 
-		 $fields = array(
-            'email' => $email,
-            'password' => $password,
-		 );
+		$email = $this->input->post("email");
+		$password = $this->input->post("password");
 		
-		 $query = $this->db->get_where('mytable', $fields);
-		 
-		 return $query;
+		$fields = array(
+			'email' => $email,
+			'password' => $password,
+		);
+	
+		$query = $this->model->get('user_tbl', $fields);
+		
+		if(count($query) > 0){
+            $data = array('msg' => 'success');
+        }
+		else if(count($query) == 0){
+			$data = array('msg' => 'invalid');
+		} else{
+            $data = array('msg' => 'error');
+        }
 
-		// try mo na lang ulit nan atleast ok 
-		// mo pressure nan sabihan mo ko sa FRIDAY kapag tapos ka na
-		// kunware may update ka ang gagawin mo na lang is
-		// git add .
-		// git commit -m "msg mo"
-		// git push origin vincent
+		echo json_encode($data);
 	}
 
 }

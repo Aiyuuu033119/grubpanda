@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-  <title>Schooltify - Verify Email</title>
+  <title>GrubPanda | Login</title>
 
   <link rel="stylesheet" href="<?php echo base_url(); ?>assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" type="text/css">
   <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/style.css" type="text/css">
@@ -49,42 +49,12 @@
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="modal fade" id="error-modal" tabindex="-1" role="dialog" aria-labelledby="modal-notification" aria-hidden="true">
-    <div class="modal-dialog modal-danger modal-dialog-centered modal-" role="document">
-      <div class="modal-content bg-gradient-success">
-        <div class="modal-body">
-          <div class="py-3 text-center">
-            <i class="ni ni-fat-remove ni-3x" style="color: #222;"></i>
-            <h4 class="heading mt-4" style="color: #222;">Error!</h4>
-            <p class="error-caption" style="color: #222;">Please check your credentials!</p>
-          </div>
-        </div>
-        <div class="modal-footer mt-0 pt-0">
-          <button type="button" class="btn btn-primary" data-dismiss="modal">Ok, Got it</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade" id="captcha-modal" tabindex="-1" role="dialog" aria-labelledby="modal-notification" aria-hidden="true">
-    <div class="modal-dialog modal-danger modal-dialog-centered modal-" role="document">
-      <div class="modal-content bg-gradient-success">
-        <div class="modal-body">
-          <div class="pt-3 text-center">
-            <h4 class="heading mb-4 error-text d-none" style="color: #ff0000;">Please Verify Yourself!</h4>
-            <div class="form-group">
-              <div class="g-recaptcha" data-sitekey="6LdlK7seAAAAAIof-pYcODqNnE3OF3Kb5Oi02i4d"></div>
-            </div>
-          </div>
-        </div>
-        <div class="modal-footer mt-0 pt-0" style="display: flex; align-items: center; justify-content: center;">
-          <button type="button" class="btn btn-primary submit-captcha-btn">Submit</button>
-        </div>
-      </div>
-    </div>
-  </div>
+    <?php
+      $this->load->view('application/include/modal-success');
+      $this->load->view('application/include/modal-error');
+      $this->load->view('application/include/modal-remind');
+    ?>
 
   </div>
 
@@ -97,33 +67,82 @@
   <script>
     $(document).ready(function() {
 
-      $('.signin__button').on('click', function() {
+      <?php
+        $this->load->view('application/service/modal');
+      ?>
+
+      var attempts = 3;
+
+      $('.signin__button').on('click', function(e) {
+        e.preventDefault();
+
+        if(attempts==0){
+          $('#remind-modal h4').text('REMINDER!');
+          $('.remind-text').text('Maximum number of attempts has been reached');
+          modalOpen($('#remind-modal'));
+          return false;
+        }
 
         var email = $('#email').val();
         var password = $('#password').val();
 
-        // var isValid = false;
+        var isValid = false;
 
-        // if(email==''&&password==''){
+        if(email==''&&password=='') {
+          $('#email').attr('placeholder', 'Required Email')
+          $('#password').attr('placeholder', 'Required Password')
+          isValid = false;
+        }else {
+          isValid = true;
+        }
 
-        // }
+        if(email==''){
+          $('#email').attr('placeholder', 'Required Email')
+          isValid = false;
+        }
+
+        if(password==''){
+          $('#password').attr('placeholder', 'Required Password')
+          isValid = false;
+        }
         
-        var data = new FormData();
+        if(isValid){
+          var data = new FormData();
 
-        data.append('email', getEmail);
-        data.append('password', getPass);
-        data.append('captcha', captcha);
+          data.append('email', email);
+          data.append('password', password);
 
-        $.ajax({
-          url: '<?php echo base_url() ?>login/userLogin',
-          data: data,
-          type: "POST",
-          contentType: false,
-          processData: false,
-          success: function(data) {
+          $.ajax({
+            url: '<?php echo base_url() ?>login/userLogin',
+            data: data,
+            type: "POST",
+            contentType: false,
+            processData: false,
+            success: function(data) {
+              var json = JSON.parse(data);
 
-          }
-        });
+              if(json.msg == 'success'){
+                $('#success-modal h4').text('SUCESSFUL!');
+                $('.success-text').text('Welcome to GrubPanda!');
+                modalOpen($('#success-modal'));
+                $('#email').val('');
+                $('#password').val('');
+              } else if(json.msg == 'invalid'){
+                $('#remind-modal h4').text('REMINDER!');
+                $('.remind-text').text('The Email/Password is Incorrect!');
+                modalOpen($('#remind-modal'));
+                $('#email').val('');
+                $('#password').val('');
+                attempts--;
+              } else {
+                $('#error-modal h4').text('ERROR!');
+                $('.error-text').text('There is error on the server');
+                modalOpen($('#error-modal'));
+              }
+
+            }
+          });
+        }
 
       });
 
