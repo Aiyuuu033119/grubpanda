@@ -12,7 +12,7 @@ class Auth extends CI_Controller {
 
 	public  function index()
 	{
-		redirect('login/login');
+		redirect('auth/login');
 	}
 
     public  function login()
