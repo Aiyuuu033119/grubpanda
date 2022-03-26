@@ -22,8 +22,24 @@ class Login extends CI_Controller {
 
 	public function userLogin()
 	{
-		// $email = $this->input->post("email");
-		// $password = $this->input->post("password");
+		 $email = $this->input->post("email");
+		 $password = $this->input->post("password");
+		 
+		 $fields = array(
+            'email' => $email,
+            'password' => $password,
+		 );
+		
+		 $query = $this->db->get_where('mytable', $fields);
+		 
+		 return $query;
+
+		// try mo na lang ulit nan atleast ok 
+		// mo pressure nan sabihan mo ko sa FRIDAY kapag tapos ka na
+		// kunware may update ka ang gagawin mo na lang is
+		// git add .
+		// git commit -m "msg mo"
+		// git push origin vincent
 	}
 
 }
