@@ -156,7 +156,7 @@ $this->load->view('application/restaurant/include/navbar');
 							<li>Delivery fee<span>$10</span></li>
 							<li class="total">Total<span>$66</span></li>
 						</ul>
-						<a href="confirm.html" class="btn_1 gradient full-width mb_5">Order Now</a>
+						<a href="<?php echo base_url()?>store/confirm" class="btn_1 gradient full-width mb_5">Order Now</a>
 						<div class="text-center"><small>Or Call Us at <strong>0432 48432854</strong></small></div>
 					</div>
 				</div>

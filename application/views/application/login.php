@@ -100,7 +100,7 @@ $this->load->view('application/include/navbar');
               if (json.msg == 'success') {
                 $('#success-modal h4').text('SUCESSFUL!');
                 $('.success-text').text('Welcome to GrubPanda!');
-                modalOpen($('#success-modal'));
+                modalOpen($('#success-modal'))
                 $('#email').val('');
                 $('#password').val('');
               } else if (json.msg == 'invalid') {
@@ -121,6 +121,11 @@ $this->load->view('application/include/navbar');
         }
 
       });
+
+      $('.success-btn').on('click', function(e) {
+        window.location.href = "<?php echo base_url()?>store/list"
+      })
+      
 
     });
   </script>

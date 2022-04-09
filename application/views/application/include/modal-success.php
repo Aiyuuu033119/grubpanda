@@ -14,7 +14,7 @@
             </div>
 
             <div class="modal-footer mt-0 pt-0 d-flex justify-content-center">
-                <button type="button" class="btn btn-primary close-modal" data-dismiss="success-modal">Okay</button>
+                <button type="button" class="btn btn-primary close-modal success-btn" data-dismiss="success-modal">Okay</button>
             </div>
 
         </div>
