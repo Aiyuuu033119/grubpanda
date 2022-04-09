@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>GrubPanda | Home</title>
+  <title>GrubPanda | Login</title>
 
   <link rel="stylesheet" href="<?php echo base_url(); ?>assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" type="text/css">
   <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/style.css" type="text/css">
@@ -17,29 +17,33 @@
 <body>
 
   <nav class="navbar navbar-light py-2 px-5" style="box-shadow: 0px 0px 9px -1px rgb(0 0 0 / 30%); background: #75b948;">
-    <a class="navbar-brand d-flex justify-content-center align-items-center" href="<?php echo base_url() ?>auth/landing">
+    <a class="navbar-brand d-flex justify-content-center align-items-center" href="<?php echo base_url()?>auth/landing">
       <img src="<?php echo base_url(); ?>assets/img/dist/logo.png" width="30" height="30" class="d-inline-block align-top" alt="" style="width: 60px; height: 45px;">
       <h2 class="ml-2 text-center" style="color: #fff;">GrubPanda</h2>
     </a>
 
     <div class="form-inline">
-      <a class="btn btn-outline-white my-2 my-sm-0" href="<?php echo base_url() ?>auth/login">Login</a>
+      <button class="btn btn-outline-white my-2 my-sm-0" type="submit">Sign Up</button>
     </div>
   </nav>
 
-  <div class="landing">
-    <div>
-      <h1 class="pb-2" style="font-size: 30px;">it's the food, delivered</h1>
-    </div>
-    <div class="container-address">
-      <div class="address-content">
-        <div class="address-form px-0 py-0">
+  <div class="sign-in">
+    <div class="container">
+      <div class="signin-content">
+        <div class="signin-form">
+          <div style="display: flex;justify-content: center;align-items: center;" class="mb-1">
+            <img src="<?php echo base_url(); ?>assets/img/dist/logo.png" alt="sing up image" style="width: 50%;">
+          </div>
+          <h2 class="form-title text-center" style="padding-bottom: 10px; color: #649E41; width: 100%">GrubPanda</h2>
           <form method="POST" class="register-form" id="login-form">
-            <div class="form-group form-button" style="text-align:center;text-align: center;display: flex;flex-direction: row;justify-content: center;align-items: center;">
-              <input class="loginInput mr-3" type="text" name="address" id="address" required="_required" placeholder="Address" style="padding: 14px 20px" />
-              <input type="submit" name="submit" id="submit" class="form-submit signin__button mt-0" value="Delivery" style="width: 20%" />
-              <span class="px-2">or</span>
-              <input type="submit" name="submit" id="submit" class="form-submit signin__button mt-0" value="Pick-Up" style="width: 20%" />
+            <div class="form-group mb-3">
+              <input class="loginInput text-center" type="email" name="email" id="email" required="_required" placeholder="Email" style="padding: 12px 20px" />
+            </div>
+            <div class="form-group mb-3">
+              <input class="loginPass text-center" type="password" name="password" id="password" required="_required" placeholder="Password" style="padding: 12px 20px" />
+            </div>
+            <div class="form-group form-button mt-3" style="text-align:center">
+              <input type="submit" name="submit" id="submit" class="form-submit signin__button" value="login" style="width: 100%" />
             </div>
           </form>
         </div>

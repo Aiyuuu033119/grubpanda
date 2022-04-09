@@ -12,12 +12,17 @@ class Auth extends CI_Controller {
 
 	public  function index()
 	{
-		redirect('auth/login');
+		redirect('auth/landing');
+	}
+
+	public  function landing()
+	{
+        $this->load->view('application/index');
 	}
 
     public  function login()
 	{
-        $this->load->view('application/index');
+        $this->load->view('application/login');
 	}
 
 	public function userLogin()
