@@ -59,6 +59,7 @@ class Auth extends CI_Controller {
 
 	public function userSignup()
 	{
+
 		$name = $this->input->post("name");
 		$email = $this->input->post("email");
 		$contact = $this->input->post("contact");
@@ -70,10 +71,19 @@ class Auth extends CI_Controller {
 			'contact' => $contact,
 			'password' => md5($password),
 		);
-	
-		$data = $this->model->insert('user_tbl', $fields);
 		
+		$query = $this->model->get('user_tbl', array('email' => $email));
+
+		if(count($query) >= 1){
+			$data = array('msg' => 'existed');
+		}else if (count($query) == 0){
+			$data = $this->model->insert('user_tbl', $fields);
+		}else {
+			$data = array('msg' => 'error');
+		}
+
 		echo json_encode($data);
+
 	}
 
 	public function userLogout()
