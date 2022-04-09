@@ -32,7 +32,7 @@
                     <a href="#0" class="show-submenu">Wishlist</a>
                 </li> -->
                 <li class="submenu">
-                    <a href="#0" class="show-submenu">Logout</a>
+                    <a href="<?php echo base_url()?>auth/userLogout" class="show-submenu">Logout</a>
                 </li>
             </ul>
         </nav>

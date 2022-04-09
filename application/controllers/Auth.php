@@ -27,6 +27,12 @@ class Auth extends CI_Controller {
         $this->load->view('application/login', $data);
 	}
 
+	public  function signup()
+	{
+		$data['title'] = 'Sign Up';
+        $this->load->view('application/signup', $data);
+	}
+
 	public function userLogin()
 	{
 		$email = $this->input->post("email");
@@ -34,7 +40,7 @@ class Auth extends CI_Controller {
 		
 		$fields = array(
 			'email' => $email,
-			'password' => $password,
+			'password' => md5($password),
 		);
 	
 		$query = $this->model->get('user_tbl', $fields);
@@ -49,6 +55,30 @@ class Auth extends CI_Controller {
         }
 
 		echo json_encode($data);
+	}
+
+	public function userSignup()
+	{
+		$name = $this->input->post("name");
+		$email = $this->input->post("email");
+		$contact = $this->input->post("contact");
+		$password = $this->input->post("password");
+		
+		$fields = array(
+			'name' => $name,
+			'email' => $email,
+			'contact' => $contact,
+			'password' => md5($password),
+		);
+	
+		$data = $this->model->insert('user_tbl', $fields);
+		
+		echo json_encode($data);
+	}
+
+	public function userLogout()
+	{
+		redirect('auth/landing');
 	}
 
 }
