@@ -112,7 +112,7 @@
           data.append('password', password);
 
           $.ajax({
-            url: '<?php echo base_url() ?>login/userLogin',
+            url: '<?php echo base_url() ?>auth/userLogin',
             data: data,
             type: "POST",
             contentType: false,
