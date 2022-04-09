@@ -17,12 +17,14 @@ class Auth extends CI_Controller {
 
 	public  function landing()
 	{
-        $this->load->view('application/index');
+		$data['title'] = 'Home';
+        $this->load->view('application/index', $data);
 	}
 
     public  function login()
 	{
-        $this->load->view('application/login');
+		$data['title'] = 'Login';
+        $this->load->view('application/login', $data);
 	}
 
 	public function userLogin()

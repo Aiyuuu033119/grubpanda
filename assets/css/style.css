@@ -25144,7 +25144,7 @@ td,
 th,
 a,
 textarea {
-	font-family: Poppins;
+	font-family: Poppins !important;
 }
 
 .icons-container{
