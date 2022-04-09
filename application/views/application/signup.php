@@ -150,7 +150,13 @@ $this->load->view('application/include/navbar');
               $('#contact').val('');
               $('#email').val('');
               $('#password').val('');
-            } else {
+            } else if (json.msg == 'existed') {
+              $('#success-modal h4').text('WARNING!');
+              $('.remind-text').text('Email Existed!');
+              modalOpen($('#remind-modal'));
+              $('#email').val('');
+            }  
+            else {
               $('#error-modal h4').text('ERROR!');
               $('.error-text').text('There is error on the server');
               modalOpen($('#error-modal'));
