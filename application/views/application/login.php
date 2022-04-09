@@ -1,31 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>GrubPanda | Login</title>
-
-  <link rel="stylesheet" href="<?php echo base_url(); ?>assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" type="text/css">
-  <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/style.css" type="text/css">
-  <link rel="stylesheet" href="<?php echo base_url(); ?>assets/login-css/style.css" type="text/css">
-  <link rel="icon" href="<?php echo base_url(); ?>assets/img/dist/logo.png">
-
-</head>
-
-<body>
-
-  <nav class="navbar navbar-light py-2 px-5" style="box-shadow: 0px 0px 9px -1px rgb(0 0 0 / 30%); background: #75b948;">
-    <a class="navbar-brand d-flex justify-content-center align-items-center" href="<?php echo base_url()?>auth/landing">
-      <img src="<?php echo base_url(); ?>assets/img/dist/logo.png" width="30" height="30" class="d-inline-block align-top" alt="" style="width: 60px; height: 45px;">
-      <h2 class="ml-2 text-center" style="color: #fff;">GrubPanda</h2>
-    </a>
-
-    <div class="form-inline">
-      <button class="btn btn-outline-white my-2 my-sm-0" type="submit">Sign Up</button>
-    </div>
-  </nav>
+<?php
+$this->load->view('application/include/header');
+$this->load->view('application/include/navbar');
+?>
 
   <div class="sign-in">
     <div class="container">
@@ -43,7 +19,7 @@
               <input class="loginPass text-center" type="password" name="password" id="password" required="_required" placeholder="Password" style="padding: 12px 20px" />
             </div>
             <div class="form-group form-button mt-3" style="text-align:center">
-              <input type="submit" name="submit" id="submit" class="form-submit signin__button" value="login" style="width: 100%" />
+              <input type="submit" name="submit" id="submit" class="form-submit signin__button" value="Login" style="width: 100%" />
             </div>
           </form>
         </div>
@@ -148,6 +124,7 @@
 
     });
   </script>
-</body>
 
-</html>
+<?php
+$this->load->view('application/include/footer');
+?>
