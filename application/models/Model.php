@@ -148,22 +148,6 @@ class Model extends CI_Model {
         return $data;
     }
 
-    public function signUp($tableName, $data){
-
-        $data = array(
-            'name' => $name,
-            'email' => $title,
-            'contactNumber' => $contactNumber,
-            'password' => $password,
-            'date' => $date,
-    );
-
-    $query = $this->db->insert('mytable', $data);
-
-    return $query;
-
-    }
-
 }
 
 ?>
