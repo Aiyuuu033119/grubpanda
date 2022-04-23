@@ -170,7 +170,7 @@ $this->load->view('application/include/navbar');
     });
 
     $('.success-btn').on('click', function(e) {
-      window.location.href = "<?php echo base_url()?>autj/login"
+      window.location.href = "<?php echo base_url()?>auth/login"
     })
 
   });
