@@ -144,7 +144,7 @@ $this->load->view('application/include/navbar');
 
             if (json.msg == 'success') {
               $('#success-modal h4').text('SUCESSFUL!');
-              $('.success-text').text('Welcome to GrubPanda!');
+              $('.success-text').text('Successfully Registered!');
               modalOpen($('#success-modal'));
               $('#name').val('');
               $('#contact').val('');
