@@ -150,6 +150,7 @@ $this->load->view('application/include/navbar');
               $('#contact').val('');
               $('#email').val('');
               $('#password').val('');
+              $('#con_password').val('');
             } else if (json.msg == 'existed') {
               $('#success-modal h4').text('WARNING!');
               $('.remind-text').text('Email Existed!');
@@ -167,6 +168,10 @@ $this->load->view('application/include/navbar');
       }
 
     });
+
+    $('.success-btn').on('click', function(e) {
+      window.location.href = "<?php echo base_url()?>autj/login"
+    })
 
   });
 </script>
