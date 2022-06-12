@@ -284,7 +284,7 @@ $this->load->view('application/restaurant/include/navbar');
 						<div class="strip">
 							<figure>
 								<span class="ribbon off">15% off</span>
-								<img src="<?php echo base_url()?>assets/img/img/lazy-placeholder.png" data-src="<?php echo base_url()?>assets/img/img/location_1.jpg" class="img-fluid lazy" alt="">
+								<img src="<?php echo base_url()?>assets/img/img/location_1.jpg" data-src="<?php echo base_url()?>assets/img/img/location_1.jpg" class="img-fluid lazy" alt="">
 								<a href="<?php echo base_url()?>store/detail" class="strip_info">
 									<small>Pizza</small>
 									<div class="item_title">
@@ -305,7 +305,7 @@ $this->load->view('application/restaurant/include/navbar');
 					<div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
 						<div class="strip">
 							<figure>
-								<img src="<?php echo base_url()?>assets/img/img/lazy-placeholder.png" data-src="<?php echo base_url()?>assets/img/img/location_2.jpg" class="img-fluid lazy" alt="">
+								<img src="<?php echo base_url()?>assets/img/img/location_2.jpg" data-src="<?php echo base_url()?>assets/img/img/location_2.jpg" class="img-fluid lazy" alt="">
 								<a href="<?php echo base_url()?>store/detail" class="strip_info">
 									<small>Burghers</small>
 									<div class="item_title">
@@ -327,7 +327,7 @@ $this->load->view('application/restaurant/include/navbar');
 						<div class="strip">
 							<figure>
 								<span class="ribbon off">15% off</span>
-								<img src="<?php echo base_url()?>assets/img/img/lazy-placeholder.png" data-src="<?php echo base_url()?>assets/img/img/location_3.jpg" class="img-fluid lazy" alt="">
+								<img src="<?php echo base_url()?>assets/img/img/location_3.jpg" data-src="<?php echo base_url()?>assets/img/img/location_3.jpg" class="img-fluid lazy" alt="">
 								<a href="<?php echo base_url()?>store/detail" class="strip_info">
 									<small>Vegetarian</small>
 									<div class="item_title">
@@ -348,7 +348,7 @@ $this->load->view('application/restaurant/include/navbar');
 					<div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
 						<div class="strip">
 							<figure>
-								<img src="<?php echo base_url()?>assets/img/img/lazy-placeholder.png" data-src="<?php echo base_url()?>assets/img/img/location_4.jpg" class="img-fluid lazy" alt="">
+								<img src="<?php echo base_url()?>assets/img/img/location_4.jpg" data-src="<?php echo base_url()?>assets/img/img/location_4.jpg" class="img-fluid lazy" alt="">
 								<a href="<?php echo base_url()?>store/detail" class="strip_info">
 									<small>Japanese</small>
 									<div class="item_title">
@@ -369,7 +369,7 @@ $this->load->view('application/restaurant/include/navbar');
 					<div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
 						<div class="strip">
 							<figure>
-								<img src="<?php echo base_url()?>assets/img/img/lazy-placeholder.png" data-src="<?php echo base_url()?>assets/img/img/location_5.jpg" class="img-fluid lazy" alt="">
+								<img src="<?php echo base_url()?>assets/img/img/location_5.jpg" data-src="<?php echo base_url()?>assets/img/img/location_5.jpg" class="img-fluid lazy" alt="">
 								<a href="<?php echo base_url()?>store/detail" class="strip_info">
 									<small>Pizza</small>
 									<div class="item_title">
@@ -390,7 +390,7 @@ $this->load->view('application/restaurant/include/navbar');
 					<div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
 						<div class="strip">
 							<figure>
-								<img src="<?php echo base_url()?>assets/img/img/lazy-placeholder.png" data-src="<?php echo base_url()?>assets/img/img/location_6.jpg" class="img-fluid lazy" alt="">
+								<img src="<?php echo base_url()?>assets/img/img/location_6.jpg" data-src="<?php echo base_url()?>assets/img/img/location_6.jpg" class="img-fluid lazy" alt="">
 								<a href="<?php echo base_url()?>store/detail" class="strip_info">
 									<small>Burghers</small>
 									<div class="item_title">
@@ -411,7 +411,7 @@ $this->load->view('application/restaurant/include/navbar');
 					<div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
 						<div class="strip">
 							<figure>
-								<img src="<?php echo base_url()?>assets/img/img/lazy-placeholder.png" data-src="<?php echo base_url()?>assets/img/img/location_7.jpg" class="img-fluid lazy" alt="">
+								<img src="<?php echo base_url()?>assets/img/img/location_7.jpg" data-src="<?php echo base_url()?>assets/img/img/location_7.jpg" class="img-fluid lazy" alt="">
 								<a href="<?php echo base_url()?>store/detail" class="strip_info">
 									<small>Chinese</small>
 									<div class="item_title">
@@ -432,7 +432,7 @@ $this->load->view('application/restaurant/include/navbar');
 					<div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
 						<div class="strip">
 							<figure>
-								<img src="<?php echo base_url()?>assets/img/img/lazy-placeholder.png" data-src="<?php echo base_url()?>assets/img/img/location_8.jpg" class="img-fluid lazy" alt="">
+								<img src="<?php echo base_url()?>assets/img/img/location_8.jpg" data-src="<?php echo base_url()?>assets/img/img/location_8.jpg" class="img-fluid lazy" alt="">
 								<a href="<?php echo base_url()?>store/detail" class="strip_info">
 									<small>Sushi</small>
 									<div class="item_title">
@@ -453,7 +453,7 @@ $this->load->view('application/restaurant/include/navbar');
 					<div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
 						<div class="strip">
 							<figure>
-								<img src="<?php echo base_url()?>assets/img/img/lazy-placeholder.png" data-src="<?php echo base_url()?>assets/img/img/location_9.jpg" class="img-fluid lazy" alt="">
+								<img src="<?php echo base_url()?>assets/img/img/location_9.jpg" data-src="<?php echo base_url()?>assets/img/img/location_9.jpg" class="img-fluid lazy" alt="">
 								<a href="<?php echo base_url()?>store/detail" class="strip_info">
 									<small>Mexican</small>
 									<div class="item_title">
@@ -474,7 +474,7 @@ $this->load->view('application/restaurant/include/navbar');
 					<div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
 						<div class="strip">
 							<figure>
-								<img src="<?php echo base_url()?>assets/img/img/lazy-placeholder.png" data-src="<?php echo base_url()?>assets/img/img/location_10.jpg" class="img-fluid lazy" alt="">
+								<img src="<?php echo base_url()?>assets/img/img/location_10.jpg" data-src="<?php echo base_url()?>assets/img/img/location_10.jpg" class="img-fluid lazy" alt="">
 								<a href="<?php echo base_url()?>store/detail" class="strip_info">
 									<small>Bakery</small>
 									<div class="item_title">
@@ -495,7 +495,7 @@ $this->load->view('application/restaurant/include/navbar');
 					<div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
 						<div class="strip">
 							<figure>
-								<img src="<?php echo base_url()?>assets/img/img/lazy-placeholder.png" data-src="<?php echo base_url()?>assets/img/img/location_11.jpg" class="img-fluid lazy" alt="">
+								<img src="<?php echo base_url()?>assets/img/img/location_11.jpg" data-src="<?php echo base_url()?>assets/img/img/location_11.jpg" class="img-fluid lazy" alt="">
 								<a href="<?php echo base_url()?>store/detail" class="strip_info">
 									<small>Mexican</small>
 									<div class="item_title">
@@ -516,7 +516,7 @@ $this->load->view('application/restaurant/include/navbar');
 					<div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
 						<div class="strip">
 							<figure>
-								<img src="<?php echo base_url()?>assets/img/img/lazy-placeholder.png" data-src="<?php echo base_url()?>assets/img/img/location_12.jpg" class="img-fluid lazy" alt="">
+								<img src="<?php echo base_url()?>assets/img/img/location_12.jpg" data-src="<?php echo base_url()?>assets/img/img/location_12.jpg" class="img-fluid lazy" alt="">
 								<a href="<?php echo base_url()?>store/detail" class="strip_info">
 									<small>Chinese</small>
 									<div class="item_title">
