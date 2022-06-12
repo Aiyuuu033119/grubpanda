@@ -5,7 +5,7 @@ $this->load->view('application/restaurant/include/navbar');
 
 <main>
 
-	<div class="hero_in detail_page background-image" data-background="url(<?php echo base_url()?>assets/img/img/hero_general_2.jpg)">
+	<div class="hero_in detail_page background-image" style="background-image: url(http://grubpanda.store/assets/img/img/hero_general_2.jpg)" data-background="url(<?php echo base_url()?>assets/img/img/hero_general_2.jpg)">
 		<div class="wrapper opacity-mask" data-opacity-mask="rgba(0, 0, 0, 0.5)">
 			<div class="container">
 				<div class="main_info">
