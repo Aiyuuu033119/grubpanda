@@ -3521,13 +3521,13 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-white {
-	color: #fff;
+	color: #fff !important;
 	border-color: #fff;
 	background-color: transparent;
 	background-image: none;
 }
 .btn-outline-white:hover {
-	color: #212529;
+	color: #212529 !important;
 	border-color: #fff;
 	background-color: #fff;
 }
@@ -6806,9 +6806,11 @@ a.close.disabled {
 }
 .modal-backdrop.fade {
 	opacity: 0;
+	z-index: -1040;
 }
 .modal-backdrop.show {
 	opacity: 0.16;
+	z-index: 1040;
 }
 
 .modal-header {

@@ -33,13 +33,25 @@ class Auth extends CI_Controller {
         $this->load->view('application/signup', $data);
 	}
 
+	public  function dashboard()
+	{
+		$data['title'] = 'Employee';
+        $this->load->view('application/dashboard', $data);
+	}
+
+	public  function change()
+	{
+		$data['title'] = 'Change Password';
+        $this->load->view('application/changePassword', $data);
+	}
+
 	public function userLogin()
 	{
-		$email = $this->input->post("email");
+		$username = $this->input->post("username");
 		$password = $this->input->post("password");
 		
 		$fields = array(
-			'email' => $email,
+			'username' => $username,
 			'password' => md5($password),
 		);
 	
@@ -61,18 +73,18 @@ class Auth extends CI_Controller {
 	{
 
 		$name = $this->input->post("name");
-		$email = $this->input->post("email");
-		$contact = $this->input->post("contact");
+		$username = $this->input->post("username");
+		// $contact = $this->input->post("contact");
 		$password = $this->input->post("password");
 		
 		$fields = array(
 			'name' => $name,
-			'email' => $email,
-			'contact' => $contact,
+			'username' => $username,
+			// 'contact' => $contact,
 			'password' => md5($password),
 		);
 		
-		$query = $this->model->get('user_tbl', array('email' => $email));
+		$query = $this->model->get('user_tbl', array('username' => $username));
 
 		if(count($query) >= 1){
 			$data = array('msg' => 'existed');
@@ -86,9 +98,30 @@ class Auth extends CI_Controller {
 
 	}
 
+	public  function reset()
+	{
+		$oldpassword = $this->input->post("oldpassword");
+		$password = $this->input->post("password");
+		$username = $this->input->post("username");
+		
+		$fields = array(
+			'password' => md5($password),
+		);
+		
+		$query = $this->model->get('user_tbl', array('password' => md5($oldpassword), 'username' => $username));
+
+		if(count($query) == 0){
+			$data = array('msg' => 'invalid');
+		}else {
+			$data = $this->model->update('user_tbl', $fields, array('username' => $username));
+		}
+
+		echo json_encode($data);
+	}
+
 	public function userLogout()
 	{
-		redirect('auth/landing');
+		redirect('auth/login');
 	}
 
 }

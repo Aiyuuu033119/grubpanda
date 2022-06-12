@@ -188,8 +188,9 @@ textarea {
 }
 
 .addressInput:focus,
-.loginInput:focus {
-	border: 2px solid #75b948;
+.loginInput:focus,
+input.loginPass:focus {
+	border: 2px solid #75b948 !important;
 }
 
 .material-icons-name {

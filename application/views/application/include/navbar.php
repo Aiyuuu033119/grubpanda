@@ -5,17 +5,23 @@
   </a>
 
   <div class="form-inline">
-    <?php 
-      if($title == 'Home' || $title == 'Sign Up'):
-    ?>
-    <a type="submit" href="<?php echo base_url() ?>auth/login" name="submit" id="submit" class="btn btn-outline-white" value="Login" style="width: 100%; font-weight:100; padding: 12px 39px;">Login</a>
     <?php
-      endif;
-      if($title == 'Login'):
+    if ($title == 'Home' || $title == 'Sign Up') :
     ?>
-    <a type="submit" href="<?php echo base_url() ?>auth/signup" name="submit" id="submit" class="btn btn-outline-white" value="Login" style="width: 100%; font-weight:100; padding: 12px 39px;">Sign Up</a>
+      <a type="submit" href="<?php echo base_url() ?>auth/login" name="submit" id="submit" class="btn btn-outline-white" value="Login" style="width: 100%; font-weight:100; padding: 12px 39px;">Login</a>
     <?php
-      endif;
+    endif;
+    if ($title == 'Login') :
     ?>
+      <a type="submit" href="<?php echo base_url() ?>auth/signup" name="submit" id="submit" class="btn btn-outline-white" value="Login" style="width: 100%; font-weight:100; padding: 12px 39px;">Sign Up</a>
+    <?php
+    endif;
+    if ($title == 'Employee' || $title == 'Archive') :
+    ?>
+      <a type="submit" name="submit" id="submit" class="btn btn-outline-white logout-session" value="login" style="width: 100%; font-weight:100; padding: 12px 39px;">Logout</a>
+    <?php
+    endif;
+    ?>
+
   </div>
 </nav>

@@ -16,11 +16,11 @@ $this->load->view('application/include/navbar');
             <input class="loginInput text-center" type="text" name="name" id="name" required="_required" placeholder="Name" style="padding: 12px 20px" />
           </div>
           <div class="form-group mb-3">
-            <input class="loginInput text-center" type="email" name="email" id="email" required="_required" placeholder="Email" style="padding: 12px 20px" />
+            <input class="loginInput text-center" type="text" name="username" id="username" required="_required" placeholder="Username" style="padding: 12px 20px" />
           </div>
-          <div class="form-group mb-3">
+          <!-- <div class="form-group mb-3">
             <input class="loginInput text-center" type="text" name="contact" id="contact" required="_required" placeholder="Contact Number" style="padding: 12px 20px" />
-          </div>
+          </div> -->
           <div class="form-group mb-3">
             <input class="loginPass text-center" type="password" name="password" id="password" required="_required" placeholder="Password" style="padding: 12px 20px" />
           </div>
@@ -61,17 +61,17 @@ $this->load->view('application/include/navbar');
       e.preventDefault();
 
       var name = $('#name').val();
-      var email = $('#email').val();
-      var contact = $('#contact').val();
+      var username = $('#username').val();
+      // var contact = $('#contact').val();
       var password = $('#password').val();
       var conpass = $('#con_password').val();
 
       var isValid = false;
 
-      if (name == '' && email == '' && contact == '' && password == '' && conpass == '') {
+      if (name == '' && username == '' && password == '' && conpass == '') {
         $('#name').attr('placeholder', 'Required Name')
-        $('#email').attr('placeholder', 'Required Email')
-        $('#contact').attr('placeholder', 'Required Contact Number')
+        $('#username').attr('placeholder', 'Required Username')
+        // $('#contact').attr('placeholder', 'Required Contact Number')
         $('#password').attr('placeholder', 'Required Password')
         $('#con_password').attr('placeholder', 'Required Confirm Password')
         isValid = false;
@@ -86,15 +86,15 @@ $this->load->view('application/include/navbar');
         isValid = false;
       }
 
-      if (email == '') {
-        $('#email').attr('placeholder', 'Required Email')
+      if (username == '') {
+        $('#username').attr('placeholder', 'Required Username')
         isValid = false;
       }
 
-      if (contact == '') {
-        $('#contact').attr('placeholder', 'Required Contact Number')
-        isValid = false;
-      }
+      // if (contact == '') {
+      //   $('#contact').attr('placeholder', 'Required Contact Number')
+      //   isValid = false;
+      // }
 
       if (password == '') {
         $('#password').attr('placeholder', 'Required Password')
@@ -129,8 +129,8 @@ $this->load->view('application/include/navbar');
         var data = new FormData();
 
         data.append('name', name);
-        data.append('email', email);
-        data.append('contact', contact);
+        data.append('username', username);
+        // data.append('contact', contact);
         data.append('password', password);
 
         $.ajax({
@@ -144,18 +144,18 @@ $this->load->view('application/include/navbar');
 
             if (json.msg == 'success') {
               $('#success-modal h4').text('SUCESSFUL!');
-              $('.success-text').text('Successfully Registered!');
+              $('.success-text').text('Your account has been created successfully');
               modalOpen($('#success-modal'));
               $('#name').val('');
               $('#contact').val('');
-              $('#email').val('');
+              $('#username').val('');
               $('#password').val('');
               $('#con_password').val('');
             } else if (json.msg == 'existed') {
               $('#success-modal h4').text('WARNING!');
-              $('.remind-text').text('Email Existed!');
+              $('.remind-text').text('Username is taken try another!');
               modalOpen($('#remind-modal'));
-              $('#email').val('');
+              $('#username').val('');
             }  
             else {
               $('#error-modal h4').text('ERROR!');
@@ -172,6 +172,10 @@ $this->load->view('application/include/navbar');
     $('.success-btn').on('click', function(e) {
       window.location.href = "<?php echo base_url()?>auth/login"
     })
+
+    $('button.close-modal').on('click', function() {
+      modalClose($('#remind-modal'))
+    });
 
   });
 </script>
