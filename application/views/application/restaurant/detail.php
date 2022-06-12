@@ -5,7 +5,7 @@ $this->load->view('application/restaurant/include/navbar');
 
 <main>
 
-	<div class="hero_in detail_page background-image" data-background="url(img/hero_general_2.jpg)">
+	<div class="hero_in detail_page background-image" data-background="url(<?php echo base_url()?>assets/<?php echo base_url()?>assets/img/img/<?php echo base_url()?>assets/img/img/hero_general_2.jpg)">
 		<div class="wrapper opacity-mask" data-opacity-mask="rgba(0, 0, 0, 0.5)">
 			<div class="container">
 				<div class="main_info">
@@ -20,9 +20,9 @@ $this->load->view('application/restaurant/include/navbar');
 						<div class="col-xl-8 col-lg-7 col-md-6">
 							<div class="buttons clearfix">
 								<span class="magnific-gallery">
-									<a href="img/detail_1.jpg" class="btn_hero" title="Photo title" data-effect="mfp-zoom-in"><i class="icon_image"></i>View photos</a>
-									<a href="img/detail_2.jpg" title="Photo title" data-effect="mfp-zoom-in"></a>
-									<a href="img/detail_3.jpg" title="Photo title" data-effect="mfp-zoom-in"></a>
+									<a href="<?php echo base_url()?>assets/<?php echo base_url()?>assets/img/img/<?php echo base_url()?>assets/img/img/detail_1.jpg" class="btn_hero" title="Photo title" data-effect="mfp-zoom-in"><i class="icon_image"></i>View photos</a>
+									<a href="<?php echo base_url()?>assets/<?php echo base_url()?>assets/img/img/<?php echo base_url()?>assets/img/img/detail_2.jpg" title="Photo title" data-effect="mfp-zoom-in"></a>
+									<a href="<?php echo base_url()?>assets/<?php echo base_url()?>assets/img/img/<?php echo base_url()?>assets/img/img/detail_3.jpg" title="Photo title" data-effect="mfp-zoom-in"></a>
 								</span>
 								<a href="#0" class="btn_hero wishlist"><i class="icon_heart"></i>Wishlist</a>
 							</div>
@@ -75,7 +75,7 @@ $this->load->view('application/restaurant/include/navbar');
 									<tr>
 										<td class="d-md-flex align-items-center">
 											<figure>
-												<a href="img/menu_item_large_1.jpg" title="Photo title" data-effect="mfp-zoom-in"><img src="img/menu-thumb-placeholder.jpg" data-src="img/menu-thumb-1.jpg" alt="thumb" class="lazy"></a>
+												<a href="<?php echo base_url()?>assets/<?php echo base_url()?>assets/img/img/<?php echo base_url()?>assets/img/img/menu_item_large_1.jpg" title="Photo title" data-effect="mfp-zoom-in"><img src="<?php echo base_url()?>assets/<?php echo base_url()?>assets/img/img/<?php echo base_url()?>assets/img/img/menu-thumb-placeholder.jpg" data-src="<?php echo base_url()?>assets/<?php echo base_url()?>assets/img/img/<?php echo base_url()?>assets/img/img/menu-thumb-1.jpg" alt="thumb" class="lazy"></a>
 											</figure>
 											<div class="flex-md-column">
 												<h4>1. Mexican Enchiladas</h4>
@@ -135,7 +135,7 @@ $this->load->view('application/restaurant/include/navbar');
 									<tr>
 										<td class="d-md-flex align-items-center">
 											<figure>
-												<a href="img/menu_item_large_2.jpg" title="Photo title" data-effect="mfp-zoom-in"><img src="img/menu-thumb-placeholder.jpg" data-src="img/menu-thumb-2.jpg" alt="thumb" class="lazy"></a>
+												<a href="<?php echo base_url()?>assets/<?php echo base_url()?>assets/img/img/<?php echo base_url()?>assets/img/img/menu_item_large_2.jpg" title="Photo title" data-effect="mfp-zoom-in"><img src="<?php echo base_url()?>assets/<?php echo base_url()?>assets/img/img/<?php echo base_url()?>assets/img/img/menu-thumb-placeholder.jpg" data-src="<?php echo base_url()?>assets/<?php echo base_url()?>assets/img/img/<?php echo base_url()?>assets/img/img/menu-thumb-2.jpg" alt="thumb" class="lazy"></a>
 											</figure>
 											<div class="flex-md-column">
 												<h4>2. Fajitas</h4>
@@ -195,7 +195,7 @@ $this->load->view('application/restaurant/include/navbar');
 									<tr>
 										<td class="d-md-flex align-items-center">
 											<figure>
-												<a href="img/menu_item_large_3.jpg" title="Photo title" data-effect="mfp-zoom-in"><img src="img/menu-thumb-placeholder.jpg" data-src="img/menu-thumb-3.jpg" alt="thumb" class="lazy"></a>
+												<a href="<?php echo base_url()?>assets/<?php echo base_url()?>assets/img/img/<?php echo base_url()?>assets/img/img/menu_item_large_3.jpg" title="Photo title" data-effect="mfp-zoom-in"><img src="<?php echo base_url()?>assets/<?php echo base_url()?>assets/img/img/<?php echo base_url()?>assets/img/img/menu-thumb-placeholder.jpg" data-src="<?php echo base_url()?>assets/<?php echo base_url()?>assets/img/img/<?php echo base_url()?>assets/img/img/menu-thumb-3.jpg" alt="thumb" class="lazy"></a>
 											</figure>
 											<div class="flex-md-column">
 												<h4>3. Royal Fajitas</h4>
@@ -255,7 +255,7 @@ $this->load->view('application/restaurant/include/navbar');
 									<tr>
 										<td class="d-md-flex align-items-center">
 											<figure>
-												<a href="img/menu_item_large_4.jpg" title="Photo title" data-effect="mfp-zoom-in"><img src="img/menu-thumb-placeholder.jpg" data-src="img/menu-thumb-4.jpg" alt="thumb" class="lazy"></a>
+												<a href="<?php echo base_url()?>assets/<?php echo base_url()?>assets/img/img/<?php echo base_url()?>assets/img/img/menu_item_large_4.jpg" title="Photo title" data-effect="mfp-zoom-in"><img src="<?php echo base_url()?>assets/<?php echo base_url()?>assets/img/img/<?php echo base_url()?>assets/img/img/menu-thumb-placeholder.jpg" data-src="<?php echo base_url()?>assets/<?php echo base_url()?>assets/img/img/<?php echo base_url()?>assets/img/img/menu-thumb-4.jpg" alt="thumb" class="lazy"></a>
 											</figure>
 											<div class="flex-md-column">
 												<h4>4. Chicken Enchilada Wrap</h4>
@@ -339,7 +339,7 @@ $this->load->view('application/restaurant/include/navbar');
 									<tr>
 										<td class="d-md-flex align-items-center">
 											<figure>
-												<a href="img/menu_item_large_1.jpg" title="Photo title" data-effect="mfp-zoom-in"><img src="img/menu-thumb-placeholder.jpg" data-src="img/menu-thumb-5.jpg" alt="thumb" class="lazy"></a>
+												<a href="<?php echo base_url()?>assets/<?php echo base_url()?>assets/img/img/<?php echo base_url()?>assets/img/img/menu_item_large_1.jpg" title="Photo title" data-effect="mfp-zoom-in"><img src="<?php echo base_url()?>assets/<?php echo base_url()?>assets/img/img/<?php echo base_url()?>assets/img/img/menu-thumb-placeholder.jpg" data-src="<?php echo base_url()?>assets/<?php echo base_url()?>assets/img/img/<?php echo base_url()?>assets/img/img/menu-thumb-5.jpg" alt="thumb" class="lazy"></a>
 											</figure>
 											<div class="flex-md-column">
 												<h4>5. Cheese Quesadilla</h4>
@@ -358,7 +358,7 @@ $this->load->view('application/restaurant/include/navbar');
 									<tr>
 										<td class="d-md-flex align-items-center">
 											<figure>
-												<a href="img/menu_item_large_2.jpg" title="Photo title" data-effect="mfp-zoom-in"><img src="img/menu-thumb-placeholder.jpg" data-src="img/menu-thumb-6.jpg" alt="thumb" class="lazy"></a>
+												<a href="<?php echo base_url()?>assets/<?php echo base_url()?>assets/img/img/<?php echo base_url()?>assets/img/img/menu_item_large_2.jpg" title="Photo title" data-effect="mfp-zoom-in"><img src="<?php echo base_url()?>assets/<?php echo base_url()?>assets/img/img/<?php echo base_url()?>assets/img/img/menu-thumb-placeholder.jpg" data-src="<?php echo base_url()?>assets/<?php echo base_url()?>assets/img/img/<?php echo base_url()?>assets/img/img/menu-thumb-6.jpg" alt="thumb" class="lazy"></a>
 											</figure>
 											<div class="flex-md-column">
 												<h4>6. Chorizo & Cheese</h4>
@@ -377,7 +377,7 @@ $this->load->view('application/restaurant/include/navbar');
 									<tr>
 										<td class="d-md-flex align-items-center">
 											<figure>
-												<a href="img/menu_item_large_3.jpg" title="Photo title" data-effect="mfp-zoom-in"><img src="img/menu-thumb-placeholder.jpg" data-src="img/menu-thumb-7.jpg" alt="thumb" class="lazy"></a>
+												<a href="<?php echo base_url()?>assets/<?php echo base_url()?>assets/img/img/<?php echo base_url()?>assets/img/img/menu_item_large_3.jpg" title="Photo title" data-effect="mfp-zoom-in"><img src="<?php echo base_url()?>assets/<?php echo base_url()?>assets/img/img/<?php echo base_url()?>assets/img/img/menu-thumb-placeholder.jpg" data-src="<?php echo base_url()?>assets/<?php echo base_url()?>assets/img/img/<?php echo base_url()?>assets/img/img/menu-thumb-7.jpg" alt="thumb" class="lazy"></a>
 											</figure>
 											<div class="flex-md-column">
 												<h4>7. Beef Taco</h4>
@@ -396,7 +396,7 @@ $this->load->view('application/restaurant/include/navbar');
 									<tr>
 										<td class="d-md-flex align-items-center">
 											<figure>
-												<a href="img/menu_item_large_4.jpg" title="Photo title" data-effect="mfp-zoom-in"><img src="img/menu-thumb-placeholder.jpg" data-src="img/menu-thumb-8.jpg" alt="thumb" class="lazy"></a>
+												<a href="<?php echo base_url()?>assets/<?php echo base_url()?>assets/img/img/<?php echo base_url()?>assets/img/img/menu_item_large_4.jpg" title="Photo title" data-effect="mfp-zoom-in"><img src="<?php echo base_url()?>assets/img/img/menu-thumb-placeholder.jpg" data-src="<?php echo base_url()?>assets/img/img/menu-thumb-8.jpg" alt="thumb" class="lazy"></a>
 											</figure>
 											<div class="flex-md-column">
 												<h4>8. Minced Beef Double Layer</h4>
@@ -415,7 +415,7 @@ $this->load->view('application/restaurant/include/navbar');
 									<tr>
 										<td class="d-md-flex align-items-center">
 											<figure>
-												<a href="img/menu_item_large_1.jpg" title="Photo title" data-effect="mfp-zoom-in"><img src="img/menu-thumb-placeholder.jpg" data-src="img/menu-thumb-9.jpg" alt="thumb" class="lazy"></a>
+												<a href="<?php echo base_url()?>assets/img/img/menu_item_large_1.jpg" title="Photo title" data-effect="mfp-zoom-in"><img src="<?php echo base_url()?>assets/img/img/menu-thumb-placeholder.jpg" data-src="<?php echo base_url()?>assets/img/img/menu-thumb-9.jpg" alt="thumb" class="lazy"></a>
 											</figure>
 											<div class="flex-md-column">
 												<h4>9. Piri Piri Chicken</h4>
@@ -434,7 +434,7 @@ $this->load->view('application/restaurant/include/navbar');
 									<tr>
 										<td class="d-md-flex align-items-center">
 											<figure>
-												<a href="img/menu_item_large_2.jpg" title="Photo title" data-effect="mfp-zoom-in"><img src="img/menu-thumb-placeholder.jpg" data-src="img/menu-thumb-10.jpg" alt="thumb" class="lazy"></a>
+												<a href="<?php echo base_url()?>assets/img/img/menu_item_large_2.jpg" title="Photo title" data-effect="mfp-zoom-in"><img src="<?php echo base_url()?>assets/img/img/menu-thumb-placeholder.jpg" data-src="<?php echo base_url()?>assets/img/img/menu-thumb-10.jpg" alt="thumb" class="lazy"></a>
 											</figure>
 											<div class="flex-md-column">
 												<h4>10. Burrito Al Pastor</h4>
@@ -477,7 +477,7 @@ $this->load->view('application/restaurant/include/navbar');
 									<tr>
 										<td class="d-md-flex align-items-center">
 											<figure>
-												<a href="img/menu_item_large_1.jpg" title="Photo title" data-effect="mfp-zoom-in"><img src="img/menu-thumb-placeholder.jpg" data-src="img/menu-thumb-17.jpg" alt="thumb" class="lazy"></a>
+												<a href="<?php echo base_url()?>assets/img/img/menu_item_large_1.jpg" title="Photo title" data-effect="mfp-zoom-in"><img src="<?php echo base_url()?>assets/img/img/menu-thumb-placeholder.jpg" data-src="<?php echo base_url()?>assets/img/img/menu-thumb-17.jpg" alt="thumb" class="lazy"></a>
 											</figure>
 											<div class="flex-md-column">
 												<h4>11. Chocolate Fudge Cake</h4>
@@ -496,7 +496,7 @@ $this->load->view('application/restaurant/include/navbar');
 									<tr>
 										<td class="d-md-flex align-items-center">
 											<figure>
-												<a href="img/menu_item_large_2.jpg" title="Photo title" data-effect="mfp-zoom-in"><img src="img/menu-thumb-placeholder.jpg" data-src="img/menu-thumb-18.jpg" alt="thumb" class="lazy"></a>
+												<a href="<?php echo base_url()?>assets/img/img/menu_item_large_2.jpg" title="Photo title" data-effect="mfp-zoom-in"><img src="<?php echo base_url()?>assets/img/img/menu-thumb-placeholder.jpg" data-src="<?php echo base_url()?>assets/img/img/menu-thumb-18.jpg" alt="thumb" class="lazy"></a>
 											</figure>
 											<div class="flex-md-column">
 												<h4>12. Cheesecake</h4>
@@ -515,7 +515,7 @@ $this->load->view('application/restaurant/include/navbar');
 									<tr>
 										<td class="d-md-flex align-items-center">
 											<figure>
-												<a href="img/menu_item_large_3.jpg" title="Photo title" data-effect="mfp-zoom-in"><img src="img/menu-thumb-placeholder.jpg" data-src="img/menu-thumb-19.jpg" alt="thumb" class="lazy"></a>
+												<a href="<?php echo base_url()?>assets/img/img/menu_item_large_3.jpg" title="Photo title" data-effect="mfp-zoom-in"><img src="<?php echo base_url()?>assets/img/img/menu-thumb-placeholder.jpg" data-src="<?php echo base_url()?>assets/img/img/menu-thumb-19.jpg" alt="thumb" class="lazy"></a>
 											</figure>
 											<div class="flex-md-column">
 												<h4>19. Apple Pie & Custard</h4>
@@ -534,7 +534,7 @@ $this->load->view('application/restaurant/include/navbar');
 									<tr>
 										<td class="d-md-flex align-items-center">
 											<figure>
-												<a href="img/menu_item_large_4.jpg" title="Photo title" data-effect="mfp-zoom-in"><img src="img/menu-thumb-placeholder.jpg" data-src="img/menu-thumb-20.jpg" alt="thumb" class="lazy"></a>
+												<a href="<?php echo base_url()?>assets/img/img/menu_item_large_4.jpg" title="Photo title" data-effect="mfp-zoom-in"><img src="<?php echo base_url()?>assets/img/img/menu-thumb-placeholder.jpg" data-src="<?php echo base_url()?>assets/img/img/menu-thumb-20.jpg" alt="thumb" class="lazy"></a>
 											</figure>
 											<div class="flex-md-column">
 												<h4>14. Profiteroles</h4>
@@ -577,7 +577,7 @@ $this->load->view('application/restaurant/include/navbar');
 									<tr>
 										<td class="d-md-flex align-items-center">
 											<figure>
-												<a href="img/menu_item_large_1.jpg" title="Photo title" data-effect="mfp-zoom-in"><img src="img/menu-thumb-placeholder.jpg" data-src="img/menu-thumb-15.jpg" alt="thumb" class="lazy"></a>
+												<a href="<?php echo base_url()?>assets/img/img/menu_item_large_1.jpg" title="Photo title" data-effect="mfp-zoom-in"><img src="<?php echo base_url()?>assets/img/img/menu-thumb-placeholder.jpg" data-src="<?php echo base_url()?>assets/img/img/menu-thumb-15.jpg" alt="thumb" class="lazy"></a>
 											</figure>
 											<div class="flex-md-column">
 												<h4>15. Coca Cola</h4>
@@ -596,7 +596,7 @@ $this->load->view('application/restaurant/include/navbar');
 									<tr>
 										<td class="d-md-flex align-items-center">
 											<figure>
-												<a href="img/menu_item_large_2.jpg" title="Photo title" data-effect="mfp-zoom-in"><img src="img/menu-thumb-placeholder.jpg" data-src="img/menu-thumb-16.jpg" alt="thumb" class="lazy"></a>
+												<a href="<?php echo base_url()?>assets/img/img/menu_item_large_2.jpg" title="Photo title" data-effect="mfp-zoom-in"><img src="<?php echo base_url()?>assets/img/img/menu-thumb-placeholder.jpg" data-src="<?php echo base_url()?>assets/img/img/menu-thumb-16.jpg" alt="thumb" class="lazy"></a>
 											</figure>
 											<div class="flex-md-column">
 												<h4>16. Beer Corona</h4>
@@ -615,7 +615,7 @@ $this->load->view('application/restaurant/include/navbar');
 									<tr>
 										<td class="d-md-flex align-items-center">
 											<figure>
-												<a href="img/menu_item_large_3.jpg" title="Photo title" data-effect="mfp-zoom-in"><img src="img/menu-thumb-placeholder.jpg" data-src="img/menu-thumb-17.jpg" alt="thumb" class="lazy"></a>
+												<a href="<?php echo base_url()?>assets/img/img/menu_item_large_3.jpg" title="Photo title" data-effect="mfp-zoom-in"><img src="<?php echo base_url()?>assets/img/img/menu-thumb-placeholder.jpg" data-src="<?php echo base_url()?>assets/img/img/menu-thumb-17.jpg" alt="thumb" class="lazy"></a>
 											</figure>
 											<div class="flex-md-column">
 												<h4>17. Red Wine</h4>
@@ -634,7 +634,7 @@ $this->load->view('application/restaurant/include/navbar');
 									<tr>
 										<td class="d-md-flex align-items-center">
 											<figure>
-												<a href="img/menu_item_large_4.jpg" title="Photo title" data-effect="mfp-zoom-in"><img src="img/menu-thumb-placeholder.jpg" data-src="img/menu-thumb-18.jpg" alt="thumb" class="lazy"></a>
+												<a href="<?php echo base_url()?>assets/img/img/menu_item_large_4.jpg" title="Photo title" data-effect="mfp-zoom-in"><img src="<?php echo base_url()?>assets/img/img/menu-thumb-placeholder.jpg" data-src="<?php echo base_url()?>assets/img/img/menu-thumb-18.jpg" alt="thumb" class="lazy"></a>
 											</figure>
 											<div class="flex-md-column">
 												<h4>18. White Wine</h4>
@@ -850,7 +850,7 @@ $this->load->view('application/restaurant/include/navbar');
 						<div class="review_card">
 							<div class="row">
 								<div class="col-md-2 user_info">
-									<figure><img src="img/avatar4.jpg" alt=""></figure>
+									<figure><img src="<?php echo base_url()?>assets/img/img/avatar4.jpg" alt=""></figure>
 									<h5>Lukas</h5>
 								</div>
 								<div class="col-md-10 review_content">
@@ -873,7 +873,7 @@ $this->load->view('application/restaurant/include/navbar');
 						<div class="review_card">
 							<div class="row">
 								<div class="col-md-2 user_info">
-									<figure><img src="img/avatar1.jpg" alt=""></figure>
+									<figure><img src="<?php echo base_url()?>assets/img/img/avatar1.jpg" alt=""></figure>
 									<h5>Marika</h5>
 								</div>
 								<div class="col-md-10 review_content">
@@ -893,7 +893,7 @@ $this->load->view('application/restaurant/include/navbar');
 							<!-- /row -->
 							<div class="row reply">
 								<div class="col-md-2 user_info">
-									<figure><img src="img/avatar.jpg" alt=""></figure>
+									<figure><img src="<?php echo base_url()?>assets/img/img/avatar.jpg" alt=""></figure>
 								</div>
 								<div class="col-md-10">
 									<div class="review_content">
@@ -972,10 +972,10 @@ $this->load->view('application/restaurant/include/navbar');
 					<div class="follow_us">
 						<h5>Follow Us</h5>
 						<ul>
-							<li><a href="#0"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/twitter_icon.svg" alt="" class="lazy"></a></li>
-							<li><a href="#0"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/facebook_icon.svg" alt="" class="lazy"></a></li>
-							<li><a href="#0"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/instagram_icon.svg" alt="" class="lazy"></a></li>
-							<li><a href="#0"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/youtube_icon.svg" alt="" class="lazy"></a></li>
+							<li><a href="#0"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="<?php echo base_url()?>assets/img/img/twitter_icon.svg" alt="" class="lazy"></a></li>
+							<li><a href="#0"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="<?php echo base_url()?>assets/img/img/facebook_icon.svg" alt="" class="lazy"></a></li>
+							<li><a href="#0"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="<?php echo base_url()?>assets/img/img/instagram_icon.svg" alt="" class="lazy"></a></li>
+							<li><a href="#0"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="<?php echo base_url()?>assets/img/img/youtube_icon.svg" alt="" class="lazy"></a></li>
 						</ul>
 					</div>
 				</div>
@@ -1004,7 +1004,7 @@ $this->load->view('application/restaurant/include/navbar');
 							</select>
 						</div>
 					</li>
-					<li><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/cards_all.svg" alt="" width="230" height="35" class="lazy"></li>
+					<li><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="<?php echo base_url()?>assets/img/img/cards_all.svg" alt="" width="230" height="35" class="lazy"></li>
 				</ul>
 			</div>
 			<div class="col-lg-6">
