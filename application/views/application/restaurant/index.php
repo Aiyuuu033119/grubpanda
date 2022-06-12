@@ -201,7 +201,7 @@ $this->load->view('application/restaurant/include/navbar');
 						<div class="owl-carousel owl-theme categories_carousel_in listing">
 							<div class="item">
 								<figure>
-									<img src="img/cat_listing_placeholder.png" data-src="img/cat_listing_1.jpg" alt="" class="owl-lazy"></a>
+									<img src="<?php echo base_url()?>assets/img/img/cat_listing_placeholder.png" data-src="<?php echo base_url()?>assets/img/img/cat_listing_1.jpg" alt="" class="owl-lazy"></a>
 									<a href="#0">
 										<h3>Pizza</h3>
 									</a>
@@ -209,7 +209,7 @@ $this->load->view('application/restaurant/include/navbar');
 							</div>
 							<div class="item">
 								<figure>
-									<img src="img/cat_listing_placeholder.png" data-src="img/cat_listing_2.jpg" alt="" class="owl-lazy"></a>
+									<img src="<?php echo base_url()?>assets/img/img/cat_listing_placeholder.png" data-src="<?php echo base_url()?>assets/img/img/cat_listing_2.jpg" alt="" class="owl-lazy"></a>
 									<a href="#0">
 										<h3>Sushi</h3>
 									</a>
@@ -217,7 +217,7 @@ $this->load->view('application/restaurant/include/navbar');
 							</div>
 							<div class="item">
 								<figure>
-									<img src="img/cat_listing_placeholder.png" data-src="img/cat_listing_3.jpg" alt="" class="owl-lazy"></a>
+									<img src="<?php echo base_url()?>assets/img/img/cat_listing_placeholder.png" data-src="<?php echo base_url()?>assets/img/img/cat_listing_3.jpg" alt="" class="owl-lazy"></a>
 									<a href="#0">
 										<h3>Dessert</h3>
 									</a>
@@ -225,7 +225,7 @@ $this->load->view('application/restaurant/include/navbar');
 							</div>
 							<div class="item">
 								<figure>
-									<img src="img/cat_listing_placeholder.png" data-src="img/cat_listing_4.jpg" alt="" class="owl-lazy"></a>
+									<img src="<?php echo base_url()?>assets/img/img/cat_listing_placeholder.png" data-src="<?php echo base_url()?>assets/img/img/cat_listing_4.jpg" alt="" class="owl-lazy"></a>
 									<a href="#0">
 										<h3>Hamburgher</h3>
 									</a>
@@ -233,7 +233,7 @@ $this->load->view('application/restaurant/include/navbar');
 							</div>
 							<div class="item">
 								<figure>
-									<img src="img/cat_listing_placeholder.png" data-src="img/cat_listing_5.jpg" alt="" class="owl-lazy"></a>
+									<img src="<?php echo base_url()?>assets/img/img/cat_listing_placeholder.png" data-src="<?php echo base_url()?>assets/img/img/cat_listing_5.jpg" alt="" class="owl-lazy"></a>
 									<a href="#0">
 										<h3>Ice Cream</h3>
 									</a>
@@ -241,7 +241,7 @@ $this->load->view('application/restaurant/include/navbar');
 							</div>
 							<div class="item">
 								<figure>
-									<img src="img/cat_listing_placeholder.png" data-src="img/cat_listing_6.jpg" alt="" class="owl-lazy"></a>
+									<img src="<?php echo base_url()?>assets/img/img/cat_listing_placeholder.png" data-src="<?php echo base_url()?>assets/img/img/cat_listing_6.jpg" alt="" class="owl-lazy"></a>
 									<a href="#0">
 										<h3>Kebab</h3>
 									</a>
@@ -249,7 +249,7 @@ $this->load->view('application/restaurant/include/navbar');
 							</div>
 							<div class="item">
 								<figure>
-									<img src="img/cat_listing_placeholder.png" data-src="img/cat_listing_7.jpg" alt="" class="owl-lazy"></a>
+									<img src="<?php echo base_url()?>assets/img/img/cat_listing_placeholder.png" data-src="<?php echo base_url()?>assets/img/img/cat_listing_7.jpg" alt="" class="owl-lazy"></a>
 									<a href="#0">
 										<h3>Italian</h3>
 									</a>
@@ -257,7 +257,7 @@ $this->load->view('application/restaurant/include/navbar');
 							</div>
 							<div class="item">
 								<figure>
-									<img src="img/cat_listing_placeholder.png" data-src="img/cat_listing_8.jpg" alt="" class="owl-lazy"></a>
+									<img src="<?php echo base_url()?>assets/img/img/cat_listing_placeholder.png" data-src="<?php echo base_url()?>assets/img/img/cat_listing_8.jpg" alt="" class="owl-lazy"></a>
 									<a href="#0">
 										<h3>Chinese</h3>
 									</a>
@@ -284,7 +284,7 @@ $this->load->view('application/restaurant/include/navbar');
 						<div class="strip">
 							<figure>
 								<span class="ribbon off">15% off</span>
-								<img src="img/lazy-placeholder.png" data-src="img/location_1.jpg" class="img-fluid lazy" alt="">
+								<img src="<?php echo base_url()?>assets/img/img/lazy-placeholder.png" data-src="<?php echo base_url()?>assets/img/img/location_1.jpg" class="img-fluid lazy" alt="">
 								<a href="<?php echo base_url()?>store/detail" class="strip_info">
 									<small>Pizza</small>
 									<div class="item_title">
@@ -305,7 +305,7 @@ $this->load->view('application/restaurant/include/navbar');
 					<div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
 						<div class="strip">
 							<figure>
-								<img src="img/lazy-placeholder.png" data-src="img/location_2.jpg" class="img-fluid lazy" alt="">
+								<img src="<?php echo base_url()?>assets/img/img/lazy-placeholder.png" data-src="<?php echo base_url()?>assets/img/img/location_2.jpg" class="img-fluid lazy" alt="">
 								<a href="<?php echo base_url()?>store/detail" class="strip_info">
 									<small>Burghers</small>
 									<div class="item_title">
@@ -327,7 +327,7 @@ $this->load->view('application/restaurant/include/navbar');
 						<div class="strip">
 							<figure>
 								<span class="ribbon off">15% off</span>
-								<img src="img/lazy-placeholder.png" data-src="img/location_3.jpg" class="img-fluid lazy" alt="">
+								<img src="<?php echo base_url()?>assets/img/img/lazy-placeholder.png" data-src="<?php echo base_url()?>assets/img/img/location_3.jpg" class="img-fluid lazy" alt="">
 								<a href="<?php echo base_url()?>store/detail" class="strip_info">
 									<small>Vegetarian</small>
 									<div class="item_title">
@@ -348,7 +348,7 @@ $this->load->view('application/restaurant/include/navbar');
 					<div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
 						<div class="strip">
 							<figure>
-								<img src="img/lazy-placeholder.png" data-src="img/location_4.jpg" class="img-fluid lazy" alt="">
+								<img src="<?php echo base_url()?>assets/img/img/lazy-placeholder.png" data-src="<?php echo base_url()?>assets/img/img/location_4.jpg" class="img-fluid lazy" alt="">
 								<a href="<?php echo base_url()?>store/detail" class="strip_info">
 									<small>Japanese</small>
 									<div class="item_title">
@@ -369,7 +369,7 @@ $this->load->view('application/restaurant/include/navbar');
 					<div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
 						<div class="strip">
 							<figure>
-								<img src="img/lazy-placeholder.png" data-src="img/location_5.jpg" class="img-fluid lazy" alt="">
+								<img src="<?php echo base_url()?>assets/img/img/lazy-placeholder.png" data-src="<?php echo base_url()?>assets/img/img/location_5.jpg" class="img-fluid lazy" alt="">
 								<a href="<?php echo base_url()?>store/detail" class="strip_info">
 									<small>Pizza</small>
 									<div class="item_title">
@@ -390,7 +390,7 @@ $this->load->view('application/restaurant/include/navbar');
 					<div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
 						<div class="strip">
 							<figure>
-								<img src="img/lazy-placeholder.png" data-src="img/location_6.jpg" class="img-fluid lazy" alt="">
+								<img src="<?php echo base_url()?>assets/img/img/lazy-placeholder.png" data-src="<?php echo base_url()?>assets/img/img/location_6.jpg" class="img-fluid lazy" alt="">
 								<a href="<?php echo base_url()?>store/detail" class="strip_info">
 									<small>Burghers</small>
 									<div class="item_title">
@@ -411,7 +411,7 @@ $this->load->view('application/restaurant/include/navbar');
 					<div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
 						<div class="strip">
 							<figure>
-								<img src="img/lazy-placeholder.png" data-src="img/location_7.jpg" class="img-fluid lazy" alt="">
+								<img src="<?php echo base_url()?>assets/img/img/lazy-placeholder.png" data-src="<?php echo base_url()?>assets/img/img/location_7.jpg" class="img-fluid lazy" alt="">
 								<a href="<?php echo base_url()?>store/detail" class="strip_info">
 									<small>Chinese</small>
 									<div class="item_title">
@@ -432,7 +432,7 @@ $this->load->view('application/restaurant/include/navbar');
 					<div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
 						<div class="strip">
 							<figure>
-								<img src="img/lazy-placeholder.png" data-src="img/location_8.jpg" class="img-fluid lazy" alt="">
+								<img src="<?php echo base_url()?>assets/img/img/lazy-placeholder.png" data-src="<?php echo base_url()?>assets/img/img/location_8.jpg" class="img-fluid lazy" alt="">
 								<a href="<?php echo base_url()?>store/detail" class="strip_info">
 									<small>Sushi</small>
 									<div class="item_title">
@@ -453,7 +453,7 @@ $this->load->view('application/restaurant/include/navbar');
 					<div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
 						<div class="strip">
 							<figure>
-								<img src="img/lazy-placeholder.png" data-src="img/location_9.jpg" class="img-fluid lazy" alt="">
+								<img src="<?php echo base_url()?>assets/img/img/lazy-placeholder.png" data-src="<?php echo base_url()?>assets/img/img/location_9.jpg" class="img-fluid lazy" alt="">
 								<a href="<?php echo base_url()?>store/detail" class="strip_info">
 									<small>Mexican</small>
 									<div class="item_title">
@@ -474,7 +474,7 @@ $this->load->view('application/restaurant/include/navbar');
 					<div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
 						<div class="strip">
 							<figure>
-								<img src="img/lazy-placeholder.png" data-src="img/location_10.jpg" class="img-fluid lazy" alt="">
+								<img src="<?php echo base_url()?>assets/img/img/lazy-placeholder.png" data-src="<?php echo base_url()?>assets/img/img/location_10.jpg" class="img-fluid lazy" alt="">
 								<a href="<?php echo base_url()?>store/detail" class="strip_info">
 									<small>Bakery</small>
 									<div class="item_title">
@@ -495,7 +495,7 @@ $this->load->view('application/restaurant/include/navbar');
 					<div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
 						<div class="strip">
 							<figure>
-								<img src="img/lazy-placeholder.png" data-src="img/location_11.jpg" class="img-fluid lazy" alt="">
+								<img src="<?php echo base_url()?>assets/img/img/lazy-placeholder.png" data-src="<?php echo base_url()?>assets/img/img/location_11.jpg" class="img-fluid lazy" alt="">
 								<a href="<?php echo base_url()?>store/detail" class="strip_info">
 									<small>Mexican</small>
 									<div class="item_title">
@@ -516,7 +516,7 @@ $this->load->view('application/restaurant/include/navbar');
 					<div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
 						<div class="strip">
 							<figure>
-								<img src="img/lazy-placeholder.png" data-src="img/location_12.jpg" class="img-fluid lazy" alt="">
+								<img src="<?php echo base_url()?>assets/img/img/lazy-placeholder.png" data-src="<?php echo base_url()?>assets/img/img/location_12.jpg" class="img-fluid lazy" alt="">
 								<a href="<?php echo base_url()?>store/detail" class="strip_info">
 									<small>Chinese</small>
 									<div class="item_title">
@@ -608,10 +608,10 @@ $this->load->view('application/restaurant/include/navbar');
 					<div class="follow_us">
 						<h5>Follow Us</h5>
 						<ul>
-							<li><a href="#0"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/twitter_icon.svg" alt="" class="lazy"></a></li>
-							<li><a href="#0"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/facebook_icon.svg" alt="" class="lazy"></a></li>
-							<li><a href="#0"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/instagram_icon.svg" alt="" class="lazy"></a></li>
-							<li><a href="#0"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/youtube_icon.svg" alt="" class="lazy"></a></li>
+							<li><a href="#0"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="<?php echo base_url()?>assets/img/img/twitter_icon.svg" alt="" class="lazy"></a></li>
+							<li><a href="#0"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="<?php echo base_url()?>assets/img/img/facebook_icon.svg" alt="" class="lazy"></a></li>
+							<li><a href="#0"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="<?php echo base_url()?>assets/img/img/instagram_icon.svg" alt="" class="lazy"></a></li>
+							<li><a href="#0"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="<?php echo base_url()?>assets/img/img/youtube_icon.svg" alt="" class="lazy"></a></li>
 						</ul>
 					</div>
 				</div>
@@ -640,7 +640,7 @@ $this->load->view('application/restaurant/include/navbar');
 							</select>
 						</div>
 					</li>
-					<li><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/cards_all.svg" alt="" width="230" height="35" class="lazy"></li>
+					<li><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="<?php echo base_url()?>assets/img/img/cards_all.svg" alt="" width="230" height="35" class="lazy"></li>
 				</ul>
 			</div>
 			<div class="col-lg-6">
